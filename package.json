@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/FlowCrypt/flowcrypt-node#readme",
   "dependencies": {
-    "@types/node": "15.12.2",
+    "@types/node": "16.0.0",
     "@types/pg": "7.14.5",
     "@types/request": "2.48.5",
     "node-cleanup": "2.1.2",
