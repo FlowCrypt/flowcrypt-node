@@ -3,7 +3,7 @@ import * as fs from 'fs';
 
 export let readFile = (path: string): Promise<Buffer> => new Promise((resolve, reject) => fs.readFile(path, (e, data) => e ? reject(e) : resolve(data)));
 
-export let moveFile = (from: string, to: string): Promise<Buffer> => new Promise((resolve, reject) => fs.rename(from, to, e => e ? reject(e) : resolve()));
+export let moveFile = (from: string, to: string): Promise<void> => new Promise((resolve, reject) => fs.rename(from, to, e => e ? reject(e) : resolve()));
 
 export let writeFile = (path: string, data: Buffer): Promise<void> => new Promise((resolve, reject) => fs.writeFile(path, data, e => e ? reject(e) : resolve()));
 
